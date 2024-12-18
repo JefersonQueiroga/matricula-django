@@ -4,30 +4,7 @@
 
 {% block center %}
   <h2>Lista de Alunos</h2>
-
-  <!-- Formulário de Filtro -->
-  <form method="get">
-    <div class="mb-3">
-      <label for="nome" class="form-label">Nome</label>
-      {{ form_filtro.nome }}
-    </div>
-   
-    <div class="row">
-      <div class="col-md-6 mb-3">
-        <label for="cidade" class="form-label">Cidade</label>
-        {{ form_filtro.cidade }}
-      </div>
-      <div class="col-md-6 mb-3">
-        <label for="curso" class="form-label">Curso</label>
-        {{ form_filtro.curso }}
-      </div>
-    </div>
-    
-    <button type="submit" class="btn btn-primary">Filtrar</button>
-    <a href="{% url 'aluno_listar' %}" class="btn btn-secondary">Limpar Filtros</a>
-  </form>
-
-  <!-- Botão para Novo Cadastro -->
+<!-- Botão para Novo Cadastro -->
   <div class="d-flex justify-content-end">
     <a href="{% url 'aluno_criar' %}" class="btn btn-success mb-3">Novo Cadastro</a>
   </div>
